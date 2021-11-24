@@ -1,0 +1,17 @@
+{
+  "name": "typescript_temp_checker",
+  "version": "1.0.0",
+  "description": "tells tomorrows temperature for a specific zip code",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "start": "npm run build && node ./out/temp.js"
+  },
+  "keywords": [],
+  "author": "locusfox",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
