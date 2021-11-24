@@ -1,4 +1,6 @@
 # Temperature Checker
 
 
-Checks tomorrow's temperature for a specific zip code
+/src/currentTemp.ts gets the current temp for a city
+
+/src/tomorrowTemp.ts gets tomorrow's temp for a zip code
