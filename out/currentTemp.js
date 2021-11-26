@@ -1,10 +1,10 @@
 "use strict";
 // This file gets the CURRENT temperature
-const axios = require('axios');
+const axios2 = require('axios');
 const city = "Chicago";
 const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d96a40a85f84cbee00348053d187bb47&units=imperial`;
 // This tells axios to grab the url defined above, THEN run the function "response"
-axios.get(url)
+axios2.get(url)
     .then(function response(hello) {
     console.log(`It is currently ${hello.headers.date} and the weather is ${Math.round(hello.data.main.temp)} degrees`);
 });
