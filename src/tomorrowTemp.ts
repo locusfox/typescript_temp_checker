@@ -11,7 +11,7 @@ const rl = readline.createInterface({
 });
 
 
-let zipCode = rl.question("What zip could would you like to see tomorrow's temperature for? ", function (zipCode: any): any {
+let zipCode = rl.question("What zip code would you like to see tomorrow's temperature for? ", function (zipCode: any): any {
   console.log(`Zip code chosen: ${zipCode}`);
 
   const api = `https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode}&appid=d96a40a85f84cbee00348053d187bb47&units=imperial`;
@@ -24,7 +24,7 @@ let zipCode = rl.question("What zip could would you like to see tomorrow's tempe
       });
       console.log(`Tomorrow's temperature in ${response.data.city.name}, ${response.data.city.country} is ${Math.round(filteredData[0].main.temp)} degrees farenheit`);
     })
-    
+
     .catch(function error(error: any): any {
       // handle error
       console.log(error);
